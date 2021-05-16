@@ -1,0 +1,32 @@
+<h3 mat-dialog-title>Add/Edit Store Value</h3>
+<div mat-dialog-content>
+    <form [formGroup]="uiForm">
+        <div class="control-container col12">
+            <mat-form-field>
+                <mat-label>Name *</mat-label>
+                <input matInput formControlName="name" id="name">
+            </mat-form-field>
+        </div>
+        <div class="control-container col12">
+            <mat-form-field>
+                <mat-label>Value *</mat-label>
+                <textarea matInput formControlName="value" id="value"></textarea>
+            </mat-form-field>
+        </div>
+        <div class="control-container col12">
+            <mat-checkbox formControlName="isSecret" id="isSecret">Is Secret?</mat-checkbox>
+        </div>
+    </form>
+</div>
+<div mat-dialog-actions style="justify-content: flex-end;" class="button-container">
+    <button mat-mini-fab title="Save" color="primary" [disabled]="this.uiForm.invalid" (click)="onSave()">
+        <mat-icon>save</mat-icon>
+    </button>
+    <button mat-mini-fab title="Delete" color="warn" *ngIf="!this.uiForm.invalid && this.uiForm.controls['_id'].value"
+        (click)="onDelete()">
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button mat-mini-fab title="Cancel" color="basic" (click)="onClose()">
+        <mat-icon>close</mat-icon>
+    </button>
+</div>

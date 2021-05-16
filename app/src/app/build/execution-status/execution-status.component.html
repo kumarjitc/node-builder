@@ -1,0 +1,13 @@
+<div class="container">
+    <h3>Build Execution Status</h3>
+    <mat-divider></mat-divider>
+    <div class="log-container" #logs [ngClass]="{
+        'error': status === -1,
+        'progress': status === 0,
+        'success': status === 1
+    }">
+        <div class="log-line" *ngFor="let item of messages">
+            <p>{{ item.message }}</p>
+        </div>
+    </div>
+</div>

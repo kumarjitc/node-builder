@@ -1,0 +1,9 @@
+node_modules/**/*
+server/build/app/**
+data
+dist/**/*
+output
+
+# macOS
+.DS_Store
+node_modules

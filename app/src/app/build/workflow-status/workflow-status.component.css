@@ -1,0 +1,27 @@
+.container h5 {
+    border-left: 1px solid #3F51B5;
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.mat-stepper-horizontal {
+    margin-top: 8px;
+}
+
+.mat-form-field {
+    margin-top: 16px;
+}
+
+.log-container.error {
+    background-color: #F1B4BA;
+}
+
+.log-container.progress {
+    background-color: #A5A5FF;
+}
+
+.log-container.success {
+    background-color: #CCFFCC;
+}

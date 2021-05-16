@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+/* Header */
+
+.container h3 {
+    border-left: 3px solid #3F51B5;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* Button Container */
+
+.container .action-button-container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Table */
+
+.container table {
+    width: 95%;
+}
+
+/* Form */
+
+.container form {
+    width: 95%;
+}
+
+.container form .col12 {
+    width: 98%
+}
+
+.container form .col6 {
+    width: 49%
+}
+
+.container form .control-container {
+    margin: 20px;
+}
+
+/**
+ * Common Styles
+ */
+
+.ml20 {
+    margin-left: 20px!important;
+}

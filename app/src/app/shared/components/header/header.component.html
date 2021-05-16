@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">
+    <span>Welcome To Build Ninja</span>
+    <span class="header-spacer"></span>
+    <button mat-mini-fab color="warn" (click)="onButtonClick('list')" title="View Builds">
+        <mat-icon>list</mat-icon>
+    </button>
+    <button mat-mini-fab color="warn" (click)="onButtonClick('workflow')" title="View Workflows">
+        <mat-icon>settings_input_component</mat-icon>
+    </button>
+    <button mat-mini-fab color="warn" (click)="onButtonClick('execution')" title="View Execution">
+        <mat-icon>timelapse</mat-icon>
+    </button>
+    <button mat-mini-fab color="warn" (click)="onButtonClick('workflow-status')" title="Workflow Status">
+        <mat-icon>fact_check</mat-icon>
+    </button>
+    <button mat-mini-fab color="warn" (click)="onButtonClick('store')" title="Parameter Store">
+        <mat-icon>store</mat-icon>
+    </button>
+</mat-toolbar>

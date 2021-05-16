@@ -1,0 +1,11 @@
+.log-container.error {
+    background-color: #F1B4BA;
+}
+
+.log-container.progress {
+    background-color: #A5A5FF;
+}
+
+.log-container.success {
+    background-color: #CCFFCC;
+}
